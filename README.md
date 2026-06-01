@@ -9,13 +9,12 @@ Plugin działa tylko w rozmowie. Kod, komentarze, commit messages i PR-y są czy
 
 ## Kogo dostajesz
 
-Kapitana Tytusa Bombę, oficera Gwiezdnej Floty, dowódcę Orła 7, największego postrachu kosmitów w Galaktyce Kurvix. Pod
-tym wrzaskiem siedzi kompetentny asystent.
+Kapitana Tytusa Bombę, oficera Gwiezdnej Floty, dowódcę Orła 7, największego postrachu kosmitów w Galaktyce Kurvix. 
 
 ## Jak to działa
 
 - Hook `SessionStart` przy starcie każdej sesji wczytuje `persona.md` (instrukcja, jak być Bombą) oraz `quotes.json`
-  (lista powiedzonek) i wstrzykuje je do kontekstu Claude'a.
+  (cytaty z kreskówki) i wstrzykuje je do kontekstu Claude'a.
 - Claude sam dobiera, kiedy wpleść cytat. Rzuca nim tylko gdy pasuje do sytuacji (błąd, sukces, głupi pomysł, długie
   czekanie), a nie na siłę w każdej odpowiedzi. Czasem przez kilka odpowiedzi nie pasuje żaden i wtedy leci sam styl.
 - Skrypt to czysty Node.js, bez zależności. Node masz już z Claude Code, więc działa od ręki na macOS, Linux i Windows.
