@@ -1,0 +1,8 @@
+{
+  "name": "kapitan-bomba",
+  "description": "Claude gada do Ciebie jak Kapitan Tytus Bomba — oficer Gwiezdnej Floty z kreskowki Bartosza Walaszka: krzykliwie, wulgarnie i z kanonicznymi cytatami. Styl tylko w czacie; kod, commity i PR-y zostaja czyste.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Michal Grzesiak"
+  }
+}
