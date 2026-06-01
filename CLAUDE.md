@@ -17,13 +17,13 @@ The repo root is a **marketplace**; the plugin lives one directory down. They sh
 - `/kapitan-bomba/hooks/hooks.json` — registers the `SessionStart` hook.
 - `/kapitan-bomba/scripts/session-start.js` — the hook script (pure Node.js).
 - `/kapitan-bomba/persona.md` — persona instructions injected into context.
-- `/kapitan-bomba/quotes.json` — canonical quotes, each `{ "quote", "when" }`.
+- `/kapitan-bomba/quotes.json` — canonical quotes, each `{ "quote": "..." }`.
 
 When bumping the version, update it in **both** `marketplace.json` and `plugin.json`.
 
 ## How it works
 
-1. On `SessionStart` (matchers: `startup|resume|clear|compact`), the hook runs `node "${CLAUDE_PLUGIN_ROOT}/scripts/session-start.js"`.
+1. On `SessionStart` (matchers: `startup|resume|clear|compact`), the hook runs `node "${CLAUDE_PLUGIN_ROOT}/scripts/session-start.js"` with a 10-second timeout.
 2. The script reads `persona.md` and `quotes.json` (located via the `CLAUDE_PLUGIN_ROOT` env var), formats them, and writes the result to **stdout** — that stdout becomes additional context for the session.
 3. Claude then *semantically* decides when a quote fits the situation (an error, a success, a dumb idea, long waits…) rather than forcing one into every reply.
 
