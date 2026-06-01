@@ -1,11 +1,11 @@
-# Kapitan Bomba
+# Kapitan Tytus Bomba Claude Hook
 
 ![version](https://img.shields.io/github/v/tag/m-grzesiak/kapitan-tytus-bomba-claude-hook?label=wersja&sort=semver)
 
 Plugin do [Claude Code](https://claude.com/claude-code), który sprawia, że Claude od pierwszej sekundy sesji gada do
 Ciebie jak Kapitan Bomba: krzykliwie, wulgarnie, z wojskowym buciorem i cytatami z kreskówki Bartosza Walaszka.
 
-Cały ten teatr zostaje w rozmowie. Kod, komentarze, commit messages i PR-y są czyste i profesjonalne.
+Plugin działa tylko w rozmowie. Kod, komentarze, commit messages i PR-y są czyste i profesjonalne.
 
 ## Kogo dostajesz
 
